@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>El Amaranto</title>
+</head>
+<body class="grid-container-pages">
+
+    <!-- -------------------------------navbar inicio--------------------------------- -->
+    
+
+    <header class="header-2">
+        <nav>
+            <ul class="nav-list">
+                
+                <li class="nav-item" id="lista">
+                    <a href="productos.html">Productos</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- -------------------------------navbar fin--------------------------------- -->
+    
+      <!-- *********************************** main inicio *********************************** -->
+
+
+    <article class="main">
+        <h1>Productos</h1>
+            <section class="prod-container">
+                <!-- card inicio -->
+
+                <div class="item">
+                    <div class="pic">
+                        <img src="images/alegria.jpg" alt="alegrias">
+                    </div>
+                    <div class="name">
+                        Alegrias
+                    </div>
+                    <div class="descripcion">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                    <button onclick="agregarAlCarrito('Alegrias', 20)" id="btnPrincipal" class="item__btn">
+                        Comprar
+                    </button>
+                </div>
+
+                <!-- card Fin -->
+
+                <!-- card inicio -->
+
+                <div class="item">
+                    <div class="pic">
+                        <img src="images/churros.jpg" alt="churros">
+                    </div>
+                    <div class="name">
+                        Churros
+                    </div>
+                    <div class="descripcion">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                    <button onclick="agregarAlCarrito('Churros', 10)" class="item__btn">
+                        Comprar
+                    </button>
+                </div>
+
+                <!-- card Fin -->
+                <!-- card inicio -->
+
+                <div class="item">
+                    <div class="pic">
+                        <img src="images/galletas.jpg" alt="galletas">
+                    </div>
+                    <div class="name">
+                        Galletas
+                    </div>
+                    <div class="descripcion">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                    <button onclick="agregarAlCarrito('Galletas', 9)" class="item__btn">
+                        Comprar
+                    </button>
+                </div>
+
+                <!-- card Fin -->
+                <!-- card inicio -->
+
+                <div class="item">
+                    <div class="pic">
+                        <img src="images/pan.jpg" alt="pan">
+                    </div>
+                    <div class="name">
+                        Pan
+                    </div>
+                    <div class="descripcion">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                    <button onclick="agregarAlCarrito('Pan', 15)" class="item__btn">
+                        Comprar
+                    </button>
+                </div>
+
+                <!-- card Fin -->
+                <!-- card inicio -->
+
+                <div class="item">
+                    <div class="pic">
+                        <img src="images/cereal2.jpeg" alt="cereal">
+                    </div>
+                    <div class="name">
+                        Cereal
+                    </div>
+                    <div class="descripcion">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                    <button onclick="agregarAlCarrito('Cereal', 2)" class="item__btn">
+                        Comprar
+                    </button>
+                </div>
+
+                <!-- card Fin -->
+                <!-- card inicio -->
+
+                <div class="item">
+                    <div class="pic">
+                        <img src="images/dulces.jpg" alt="dulces">
+                    </div>
+                    <div class="name">
+                        Dulces
+                    </div>
+                    <div class="descripcion">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                    <button onclick="agregarAlCarrito('Dulces', 30)" class="item__btn">
+                        Comprar
+                    </button>
+                </div>
+
+                <!-- card Fin -->
+
+                
+
+            </section>
+        
+</article>
+
+      <!-- *********************************** main fin *********************************** -->
+
+    <!-- -------------------------------footer inicio--------------------------------- -->
+
+    <footer class="footer">
+        <div>
+            <ul class="footer-list">
+                <li class="nav-item"> 
+                    <a href="https://www.facebook.com/">Facebook</a> </li>
+                <li class="nav-item"> 
+                    <a href="https://twitter.com/?lang=es">Twitter</a> </li>
+                <li class="nav-item"> 
+                    <a href="mailto:mail@gmail.com">email</a> </li>
+            </ul>
+        </div>  
+    </footer>
+
+    <!-- -------------------------------footer fin--------------------------------- -->
+
+<script src="main.js"></script>
+</body>
+</html>
