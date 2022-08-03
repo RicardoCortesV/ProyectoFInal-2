@@ -1,5 +1,3 @@
-
-
 function Producto(nombre, stock, precio){  //USO CONSTRUCTOR DE OBJETOS. 
     this.nombre = nombre;
     this.stock = stock;
@@ -12,8 +10,6 @@ const item3 = new Producto('galletas', 9, 15);
 const item4 = new Producto('pan', 15, 30);
 const item5 = new Producto('cereal', 2, 20);
 const item6 = new Producto('dulces', 30, 8);
-
-
 
 const carrito = [];
 
@@ -33,9 +29,7 @@ function agregarAlCarrito(producto, stockDelProducto) { //USO DE PUSH PARA AGREG
     } else {
         alert('lo siento, no tenemos stock suficiente de ' + producto);
     }
-
 }
-
 
 //USO DE DOM
 const lista = document.getElementById('lista')//Accede al elemento
