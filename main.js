@@ -32,8 +32,6 @@ function agregarAlCarrito(producto, stockDelProducto) {
 }
 
 //USO DE DOM
-
-
 const lista = document.getElementById('lista')
 console.log(lista)
 
