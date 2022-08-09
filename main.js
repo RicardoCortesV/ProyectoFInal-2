@@ -1,19 +1,19 @@
-function Producto(nombre, stock, precio){  //USO CONSTRUCTOR DE OBJETOS. 
+function Producto(nombre, stock, precio){ 
     this.nombre = nombre;
     this.stock = stock;
     this.precio = precio;
 }
 
-const item1 = new Producto('Alegria', 20, 10); //Asignado de simulado de parámetros
-const item2 = new Producto('Churros', 10, 15);
-const item3 = new Producto('galletas', 9, 15);
-const item4 = new Producto('pan', 15, 30);
-const item5 = new Producto('cereal', 2, 20);
-const item6 = new Producto('dulces', 30, 8);
+const alegria = new Producto('Alegria', 20, 10);
+const churros = new Producto('Churros', 10, 15);
+const galletas = new Producto('galletas', 9, 15);
+const pan = new Producto('pan', 15, 30);
+const cereal = new Producto('cereal', 2, 20);
+const dulces = new Producto('dulces', 30, 8);
 
 const carrito = [];
 
-function validarStock(stockDelProducto) {//Indica la cantidad màxima de unidades a pedir
+function validarStock(stockDelProducto) {
     if (stockDelProducto > 10) {
         return 'NO hay stock';
     } else {
@@ -21,34 +21,29 @@ function validarStock(stockDelProducto) {//Indica la cantidad màxima de unidade
     }
 }
 
-function agregarAlCarrito(producto, stockDelProducto) { //USO DE PUSH PARA AGREGAR AL ARRAY 
+function agregarAlCarrito(producto, stockDelProducto) { 
     const tenemosStock = validarStock(stockDelProducto);    
     if (tenemosStock === 'SÌ hay stock') {
-        console.log('Agregaste ' + ' unidades de ' + producto);     //Si el pedido es -10 unidades imprime el mensaje
-        carrito.push(producto);                      //Si el pedido es -10 unidades se agrega al array carrito  
+        console.log('Agregaste ' + ' unidades de ' + producto);
+        carrito.push(producto);                      
     } else {
         alert('lo siento, no tenemos stock suficiente de ' + producto);
     }
 }
 
 //USO DE DOM
-const lista = document.getElementById('lista')//Accede al elemento
+
+
+const lista = document.getElementById('lista')
 console.log(lista)
 
-const li = document.createElement('li')//Mètodo p/crear el texto
-li.textContent = 'Tus compras'//Crea un texto, esq sup der de la página
+const li = document.createElement('li')
+li.textContent = 'Tus compras'
 
 lista.appendChild(li)
 
-let boton = document.getElementById("lista"); //USO DE EVENTO
-boton.addEventListener("click", respuestaClick);//Muestra lo que se ha pedido por medio de una alerta
+let boton = document.getElementById("lista"); 
+boton.addEventListener("click", respuestaClick);
 function respuestaClick(){
     alert("Esto se ha agregado al carrito: " + carrito);
 }
-
-
-
-
-
-
-
