@@ -31,6 +31,10 @@ function agregarAlCarrito(producto, stockDelProducto) {
     }
 }
 
+window.onload = function(){
+    document.getElementById('add').addEventListener('click',agregarAlCarrito);
+    }
+
 //USO DE DOM
 const lista = document.getElementById('lista')
 console.log(lista)
